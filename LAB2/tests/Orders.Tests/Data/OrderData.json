@@ -1,0 +1,38 @@
+{
+     "order": 
+     [
+        {
+            "id": "order1",
+            "clientID": "Order 1",
+            "product": {
+                "id": "product1",
+                "name": "Product 1",
+                "price": 100,
+                "quantity": 5
+            },
+            "quantity": 2
+        },
+        {
+            "id": "order2",
+            "clientID": "Order 2",
+            "product": {
+                "id": "product2",
+                "name": "Product 2",
+                "price": 63,
+                "quantity": 35
+            },
+            "quantity": 6
+        },
+        {
+            "id": "order3",
+            "clientID": "Order 3",
+            "product": {
+                "id": "product3",
+                "name": "Product 3",
+                "price": 100,
+                "quantity": 6352
+            },
+            "quantity": 14
+        }
+     ]
+}

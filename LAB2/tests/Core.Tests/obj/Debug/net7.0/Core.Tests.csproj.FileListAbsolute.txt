@@ -1,0 +1,6 @@
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/bin/Debug/net7.0/CoverletSourceRootsMapping
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/obj/Debug/net7.0/Core.Tests.csproj.AssemblyReference.cache
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/obj/Debug/net7.0/Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/obj/Debug/net7.0/Core.Tests.AssemblyInfoInputs.cache
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/obj/Debug/net7.0/Core.Tests.AssemblyInfo.cs
+/Users/karolborecki/Desktop/MetodyWytwarzaniaOprogramowania/LAB2/tests/Core.Tests/obj/Debug/net7.0/Core.Tests.csproj.CoreCompileInputs.cache
