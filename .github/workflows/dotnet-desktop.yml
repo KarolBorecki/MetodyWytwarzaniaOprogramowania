@@ -73,7 +73,7 @@ jobs:
 
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/MyProject
+      working-directory: Project/
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
