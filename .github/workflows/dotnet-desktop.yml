@@ -57,7 +57,7 @@ jobs:
 
     env:
       Solution_Name: Project.sln                        # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: Project/tests/PrimeService/PrimeService.csproj              # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Test_Project_Path: Project\tests\PrimeService\ #Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
 
     steps:
     - name: Checkout
