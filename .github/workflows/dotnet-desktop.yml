@@ -57,7 +57,7 @@ jobs:
 
     env:
       Solution_Name: Project.sln                        # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: Project\tests\PrimeService\ #Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Test_Project_Path: Project/tests/PrimeService/PrimeService.csproj  #Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
 
     steps:
     - name: Checkout
@@ -70,6 +70,10 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: src/MyProject
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
