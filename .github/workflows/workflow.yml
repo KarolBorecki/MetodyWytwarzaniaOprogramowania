@@ -35,7 +35,7 @@ jobs:
       run: dotnet test
 
     - name: Publish
-      run: dotnet publish ./Project.csproj -o ${{ DOTNET_ROOT }}/app
+      run: dotnet publish ./Project.csproj -o ${{ env.DOTNET_ROOT }}/app
       
     - name: Upload a aartifact
       uses: actions/upload-artifact@v3.1.0
