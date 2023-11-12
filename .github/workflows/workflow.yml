@@ -28,8 +28,8 @@ jobs:
       run: dotnet restore
       working-directory: Project/
 
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build
+      run: dotnet build --no-restore
 
     - name: Execute unit tests
       run: dotnet test
@@ -37,7 +37,7 @@ jobs:
     - name: Publish
       run: dotnet publish ./Project.csproj -c Release -o ${{ env.DOTNET_ROOT }}/app
       
-    - name: Upload a artifact
+    - name: Upload 
       uses: actions/upload-artifact@v3.1.0
       with:
         name: .net-app
