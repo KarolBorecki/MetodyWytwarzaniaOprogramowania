@@ -1,4 +1,4 @@
-namespace Project.Models;
+namespace MetodyWytwarzaniaOprogramowania.Models;
 
 public class ErrorViewModel
 {

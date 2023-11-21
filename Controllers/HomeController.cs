@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Project.Models;
+using MetodyWytwarzaniaOprogramowania.Models;
+using MWO.Models;
 
-namespace Project.Controllers;
+namespace MetodyWytwarzaniaOprogramowania.Controllers;
 
 public class HomeController : Controller
 {
@@ -18,9 +19,21 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+
+    [HttpGet]
+    public IActionResult Calculator()
     {
-        return View();
+        OperationModel operationModel = new OperationModel();
+        operationModel.Number1 = 8;
+        operationModel.Number2 = 10;
+        return View(operationModel);
+    }
+
+    [HttpPost]
+    public IActionResult Calculator(OperationModel operation)
+    {
+        operation.Result = operation.Number1+operation.Number2;
+        return View(operation);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
